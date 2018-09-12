@@ -40,7 +40,6 @@ Day1> 2_nlp > 2) konlpy_tutlrial > 2. soynlp.ipynb 각 문장을 형태소 분�
 
 soynlp와 KoNLPy를 결합해서 사용하면 형태소 분석 정확도를 더 높일 수 있다.
 
-
 ## 카카오 API를 활용한 챗봇 제작
 
 영화 좌석정보를 알려주는 카카오 플러스 친구 챗봇 제작해보기
@@ -91,6 +90,53 @@ sessID = dataReceive['user_key']
 ### 워드 임베딩
 
 - 컴퓨터에서 단어를 처리하기 위해 컴퓨터가 이해할 수 있는 방식으로 변환
-- Word2Vec
+- Word2Vec: Day1/2_nlp/4) Korean_word2vec_tutorial
 - Gensim
 - Glove 등
+
+### NER
+
+- 텍스트로부터 인명, 지명, 기관명 등과 같은 개채명을 인식하여 해당 개체명 태그를 달아주는 작업
+
+```bash
+cd .Day1/2_nlp/5\)\ Korean_ner_tutorial/applications/named_entity_recognition
+python tf_train.py
+```
+
+### 감성분석
+
+문장에 속해 있는 감정의 극성(polarity)을 구분하는 문제
+
+```bash
+cd .Day1/2_nlp/6\)\ sentiment_analysis_tutorial/
+source activate ml2
+python doc2vec_run.py
+```
+
+## Trouble Shooting
+
+python 프로그램 실행시 OutOfMemory 오류 발생시 아래 명령어 실행 해서 메모리를 많이 차지하고 있는 python 프로세스를 강제 종료
+
+```bash
+nvidia-smi
+```
+
+## 아이나비 고객센터 챗봇
+
+카톡 API의 한계는 계층구조 구성이 불가능하고 1질문에 1답장 밖에 안됨. 카테고리별로 유저가 질문을 타고 들어갈 수 있는 tree 모델 필요.
+
+```bash
+cd ./Day1/3_advChatbot/2-aft/ui
+source activate ml
+python app.py
+```
+
+## 딥러닝
+
+챗봇에 인공지능이 왜 필요한가?
+
+- [Stitch Fix](https://www.stitchfix.com/): 딥러닝을 통한 추천결과와 스타일리스트의 추천을 적절히 결합하여 원하는 옷을 추천
+- 넷플릭스: 일반 사용자들의 별점 예측 알고리즘 대회 개최
+- [kaggle](https://www.kaggle.com/): 딥러닝 기반 Competition
+
+Train Set, Valid Set은 반드시 따로 존재해야 한다.
