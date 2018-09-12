@@ -1,5 +1,3 @@
-https://watson-assistant-demo.ng.bluemix.net
-
 # 챗봇 개요
 
 ## 챗봇 샘플
