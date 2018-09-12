@@ -83,4 +83,4 @@
 
 Levenshtein distance. 가장 대표적인 String Distance Metric. 단어 A에서 B로 수정하기 위한 횟수를 거리고 정의함.
 
-## [Day1](day1)
+## [Day1](day-1.md)
