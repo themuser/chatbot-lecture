@@ -92,7 +92,7 @@ source activate ml
 jupyter notebook
 ```
 
-juypter notebook 실행을 통해서 나오는 웹페이지에서 파이썬 코드를 line-by-line으로 실행 가능.
+juypter notebook 실행을 통해서 나오는 웹페이지에서 파이썬 코드를 line-by-line으로 실행 가능(shift + enter).
 
 # 오탈자 교정 실습
 
