@@ -25,6 +25,22 @@ Levenshtein disance를 이용한 띄어쓰기 실습.
 - 형태소 분석: 형태소를 비롯하여 어근, 접두/접미사, 품사 등 다양한 언어적 속성의 구조를 분석
 - 품사 태깅: 형태소의 뜻과 문맥을 고려하여 품사를 지정하는 일
 
+### KoNLPy Tutorial
+
+```bash
+source activate ml
+jupyter notebook
+```
+
+Day1> 2_nlp > 2) konlpy_tutlrial > 1. konlpy.ipynb 각 문장을 형태소 분석하는 샘플
+
+### soynlp Tutorial
+
+Day1> 2_nlp > 2) konlpy_tutlrial > 2. soynlp.ipynb 각 문장을 형태소 분석하는 샘플
+
+soynlp와 KoNLPy를 결합해서 사용하면 형태소 분석 정확도를 더 높일 수 있다.
+
+
 ## 카카오 API를 활용한 챗봇 제작
 
 영화 좌석정보를 알려주는 카카오 플러스 친구 챗봇 제작해보기
@@ -64,3 +80,17 @@ user_input = dataReceive['content']
 # 유저의 아이디 값
 sessID = dataReceive['user_key']
 ```
+
+## 한글 데이터 처리 & DNLP
+
+- 토픽 모델링
+- [워드 임베딩](http://w.elnn.kr/search)
+- NER
+- 감성분석
+
+### 워드 임베딩
+
+- 컴퓨터에서 단어를 처리하기 위해 컴퓨터가 이해할 수 있는 방식으로 변환
+- Word2Vec
+- Gensim
+- Glove 등
