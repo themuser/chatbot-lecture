@@ -5,6 +5,12 @@
 - 트리탐색(몬테카를로 검색)
 - 마르코프 의사결정
 
+오늘 강의는 아래 단계로 구성됨.
+
+- 딥러닝 개요/실습
+- 딥러닝을 위한 Tensorflow
+- 딥러닝 자연어 처리 모델 실전 적용
+
 ## 인공지능 팩맨 만들기
 
 ```bash
@@ -15,7 +21,7 @@ python pacman.py -p ApproximateQAgent -a extractor=CustomExtractor -x 50 -n 60 -
 
 ## MNIST
 
-딥러닝 입무에서 많이 사용. 활성화 함수에 의해 출력이 결정된다.(Sigmoid, RELU 등))
+딥러닝 입문시 많이 사용. 활성화 함수에 의해 출력이 결정된다.(Sigmoid, RELU 등)
 
 ## CNN, RNN
 
@@ -40,7 +46,7 @@ source activate ml2
 Session 으로 run 하기전까지는 Tensor 값이 전달되고 있는 상태임.
 
 ```python
-node1 = tf.constant( 3.0, dtype=tf.float32) 
+node1 = tf.constant( 3.0, dtype=tf.float32)
 node2 = tf.constant( 4.0 )
 node3 = tf.constant(4)
 print(node1, node2) //Tensor("Const_5:0", shape=(), dtype=float32) Tensor("Const_6:0", shape=(), dtype=float32)
@@ -53,3 +59,12 @@ print(sess.run(node3))  // 4
 ```
 
 Jupytor Notebook 입력 방식은 vi editor와 비슷하다. Command/Edit mode 두 가지로 나뉘고 Command mode에서 다양한 동작을 수행할 수 있다.
+
+## 딥러닝 자연어 처리 실습
+
+셰익스피어 고전을 활용한 Word Embedding 모델
+
+```bash
+cd Day2/4_Word2Vec/Word2VecEng
+python train.py
+```

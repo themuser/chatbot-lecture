@@ -20,12 +20,12 @@
 
 ## 챗봇 방식
 
-### - Rule Based
+### Rule Based
 
 도메인이 한정적일수록, 높은 신뢰도가 필요할수록 좋음  
 신뢰도는 높지만 범용성을 높이기가 어려움
 
-### - AI Model
+### AI Model
 
 도메인이 범용적일수록, 동작이 복잡할수록 좋음.  
 학습을 잘못했을 경우 사회적인 이슈가 있는 대답을 할 가능성도 있음.
@@ -33,13 +33,13 @@
 
 ## 시중에 나와있는 봇들
 
-### - 특정영역 봇
+### 특정영역 봇
 
 - [법률] [DoNotPay (IBM Watson 기반)](https://www.donotpay.com/): 주차위반 딱지 발급 철회를 위한 법률 검토 서비스
 - [금융] SORi: 우리은행 뱅킹 챗봇. 네이버 Clova 기반. Rule Based
 - [유통] GS25 지니
 
-### - 범용 봇
+### 범용 봇
 
 - Amazon Alexa
 - Google Assistant
@@ -83,4 +83,8 @@
 
 Levenshtein distance. 가장 대표적인 String Distance Metric. 단어 A에서 B로 수정하기 위한 횟수를 거리고 정의함.
 
-## [Day-1](day-1.md)
+## 실습 예제
+
+### [Day-1](day-1.md)
+
+### [Day-2(Deep Learning)](day-2-deep-learning.md)
