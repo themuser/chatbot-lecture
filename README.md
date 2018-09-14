@@ -85,6 +85,13 @@ Levenshtein distance. 가장 대표적인 String Distance Metric. 단어 A에서
 
 ## 실습 예제
 
+강의자료 받는 방법
+
+```bash
+docker pull themuser/chatbot:1.1
+docker run -it --name chatbot -v /my-dir:/chatbot themuser/chatbot:1.1
+```
+
 ### [Day-1](day-1.md)
 
 ### [Day-2(Deep Learning)](day-2-deep-learning.md): Deep Learning
