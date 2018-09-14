@@ -87,4 +87,6 @@ Levenshtein distance. 가장 대표적인 String Distance Metric. 단어 A에서
 
 ### [Day-1](day-1.md)
 
-### [Day-2(Deep Learning)](day-2-deep-learning.md)
+### [Day-2(Deep Learning)](day-2-deep-learning.md): Deep Learning
+
+### [Day-3](day-3.md): TensowFlow, RNN
